@@ -1,5 +1,6 @@
 package com.Busticketbookingsystem;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
 public class Main {
@@ -91,3 +92,7 @@ public class Main {
         }
     }
 }
+=======
+public class Main {
+}
+>>>>>>> 0e424c2 (Added Ticket class)

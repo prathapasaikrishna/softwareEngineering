@@ -36,4 +36,8 @@ public class Customer {
     public String getGender() {
         return gender;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0e424c2 (Added Ticket class)

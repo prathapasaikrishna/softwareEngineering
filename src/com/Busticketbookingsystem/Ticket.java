@@ -10,7 +10,11 @@ public class Ticket {
     private Bus bus;
     private int numberOfTickets;
     private double fare;
+<<<<<<< HEAD
     private List<Integer> bookedSeats; // stores 0-based seat indices
+=======
+    private List<Integer> bookedSeats;
+>>>>>>> 0e424c2 (Added Ticket class)
 
     public Ticket(int ticketId, Bus bus, int numberOfTickets,
                   double fare, int customerId) {
@@ -22,8 +26,11 @@ public class Ticket {
         this.customerId = customerId;
         this.bookedSeats = new ArrayList<>();
     }
+<<<<<<< HEAD
 
     // Called after each successful bookSeat()
+=======
+>>>>>>> 0e424c2 (Added Ticket class)
     public void addBookedSeat(int seatNumber) {
         bookedSeats.add(seatNumber);
     }

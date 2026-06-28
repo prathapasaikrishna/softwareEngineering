@@ -5,17 +5,28 @@ import java.util.Arrays;
 public class Bus {
 
     private int busId;
+<<<<<<< HEAD
     private String busType;      // AC / Non-AC
     private String seatType;     // Seater / Sleeper
     private int totalSeats;
     private boolean[] seats;     // true = booked, false = available
+=======
+    private String busType;
+    private String seatType;
+    private int totalSeats;
+    private boolean[] seats;
+>>>>>>> 0e424c2 (Added Ticket class)
 
     public Bus(int busId, String busType, String seatType, int totalSeats) {
         this.busId = busId;
         this.busType = busType;
         this.seatType = seatType;
         this.totalSeats = totalSeats;
+<<<<<<< HEAD
         this.seats = new boolean[totalSeats]; // all false by default
+=======
+        this.seats = new boolean[totalSeats];
+>>>>>>> 0e424c2 (Added Ticket class)
     }
 
     public int getAvailableSeats() {
@@ -47,7 +58,11 @@ public class Bus {
             return true;
         }
 
+<<<<<<< HEAD
         return false; // already booked
+=======
+        return false;
+>>>>>>> 0e424c2 (Added Ticket class)
     }
 
     public boolean cancelSeat(int seatNumber) {
@@ -59,7 +74,11 @@ public class Bus {
             return true;
         }
 
+<<<<<<< HEAD
         return false; // seat was not booked
+=======
+        return false;
+>>>>>>> 0e424c2 (Added Ticket class)
     }
 
     public int getBusId() {

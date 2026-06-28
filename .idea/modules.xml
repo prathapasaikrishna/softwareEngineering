@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/BusBookingSystem.iml" filepath="$PROJECT_DIR$/BusBookingSystem.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Busticketbookingsystem.iml" filepath="$PROJECT_DIR$/Busticketbookingsystem.iml" />
+>>>>>>> 0e424c2 (Added Ticket class)
     </modules>
   </component>
 </project>
