@@ -5,17 +5,17 @@ import java.util.Arrays;
 public class Bus {
 
     private int busId;
-    private String busType;      // AC / Non-AC
-    private String seatType;     // Seater / Sleeper
+    private String busType;
+    private String seatType;
     private int totalSeats;
-    private boolean[] seats;     // true = booked, false = available
+    private boolean[] seats;
 
     public Bus(int busId, String busType, String seatType, int totalSeats) {
         this.busId = busId;
         this.busType = busType;
         this.seatType = seatType;
         this.totalSeats = totalSeats;
-        this.seats = new boolean[totalSeats]; // all false by default
+        this.seats = new boolean[totalSeats];
     }
 
     public int getAvailableSeats() {
@@ -47,7 +47,7 @@ public class Bus {
             return true;
         }
 
-        return false; // already booked
+        return false;
     }
 
     public boolean cancelSeat(int seatNumber) {
@@ -59,7 +59,7 @@ public class Bus {
             return true;
         }
 
-        return false; // seat was not booked
+        return false;
     }
 
     public int getBusId() {
