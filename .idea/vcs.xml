@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-<<<<<<< HEAD
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-=======
-    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
->>>>>>> 0e424c2 (Added Ticket class)
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/softwareEngineering" vcs="Git" />
   </component>
 </project>
