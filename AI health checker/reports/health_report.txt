@@ -1,0 +1,9 @@
+
+AI HEALTH REPORT
+
+Predicted Disease : Cold
+
+Recommendation:
+Drink enough water.
+Take proper rest.
+Consult a doctor if symptoms persist.

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="result-box">
+
+    <h1>Health Analysis Result</h1>
+
+    <h2>Possible Disease:</h2>
+    <h3>{{ disease }}</h3>
+
+    <img src="{{ url_for('static', filename='chart.png') }}" alt="Chart">
+
+    <br><br>
+
+    <a href="/">
+        <button>Check Again</button>
+    </a>
+
+    <button onclick="alert('Report Generated Successfully!')">
+        Download Report
+    </button>
+
+    <hr>
+
+    <h2>AI Health Assistant</h2>
+
+    <div id="chatbox"
+         style="height:200px;
+                overflow-y:auto;
+                border:1px solid #ccc;
+                padding:10px;
+                margin-bottom:10px;
+                text-align:left;">
+    </div>
+
+    <input type="text"
+           id="userInput"
+           placeholder="Ask about symptoms..."
+           style="width:70%; padding:10px;">
+
+    <button onclick="sendMessage()">Send</button>
+
+</div>
+
+<script>
+
+function sendMessage(){
+
+    let input = document.getElementById("userInput");
+    let message = input.value;
+
+    if(message.trim() === "")
+        return;
+
+    let chatbox = document.getElementById("chatbox");
+
+    chatbox.innerHTML +=
+    "<p><b>You:</b> " + message + "</p>";
+
+    let reply =
+    "Please consult a doctor for professional medical advice.";
+
+    if(message.toLowerCase().includes("fever"))
+        reply =
+        "Drink plenty of water and take proper rest.";
+
+    else if(message.toLowerCase().includes("cough"))
+        reply =
+        "Warm fluids may help soothe your throat.";
+
+    else if(message.toLowerCase().includes("headache"))
+        reply =
+        "Rest and staying hydrated may help.";
+
+    else if(message.toLowerCase().includes("fatigue"))
+        reply =
+        "Get enough sleep and avoid overexertion.";
+
+    chatbox.innerHTML +=
+    "<p><b>Bot:</b> " + reply + "</p>";
+
+    chatbox.scrollTop = chatbox.scrollHeight;
+
+    input.value = "";
+}
+
+</script>
+
+</body>
+</html>
